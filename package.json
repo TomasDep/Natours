@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomasDep/Natours.git"
+  },
+  "author": "TomasDep",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  },
+  "bugs": {
+    "url": "https://github.com/TomasDep/Natours/issues"
+  },
+  "homepage": "https://github.com/TomasDep/Natours#readme"
+}
