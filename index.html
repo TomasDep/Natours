@@ -14,7 +14,7 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body class="container">
-    <div class="navigation">
+    <nav class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
@@ -29,7 +29,7 @@
           <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
         </ul>
       </nav>
-    </div>
+    </nav>
 
     <header class="header">
       <div class="header__logo-box">
@@ -46,10 +46,10 @@
     
     <main>
       <section class="section-about">
-        <div class="u-center-text u-margin-bottom-big">
+        <header class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Exciting tours for adventurous people</h2>
-        </div>
-        <div class="row">
+        </header>
+        <article class="row">
           <div class="col-1-of-2">
             <h3 class="heading-tertiary u-margin-bottom-small">You're going to fall in love with nature</h3>
             <p class="paragraph">
@@ -57,29 +57,45 @@
               Porro reiciendis, placeat sed excepturi, molestiae id vero quos ab, consequuntur ut quibusdam 
               repudiandae officia error doloremque illum!
             </p>
-
             <h3 class="heading-tertiary u-margin-bottom-small">Live adventures like you never have before</h3>
             <p class="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, sint labore blanditiis excepturi 
               iure eveniet? Error aliquid placeat, blanditiis provident commodi molestias laudantium, magni ad 
               possimus obcaecati, accusantium architecto aut.
             </p>
-            
             <a href="#" class="btn-text">Learn more &rarr;</a>
           </div>
           <div class="col-1-of-2">
             <div class="composition">
-              <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-              <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-              <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+              <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" 
+                   sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                   alt="Photo 1" 
+                   class="composition__photo composition__photo--p1" 
+                   src="img/nat-1-large.jpg" />
+              
+              <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" 
+                   sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                   alt="Photo 2" 
+                   class="composition__photo composition__photo--p2" 
+                   src="img/nat-2-large.jpg" />
+        
+              <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" 
+                   sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" 
+                   alt="Photo 3" 
+                   class="composition__photo composition__photo--p3" 
+                   src="img/nat-3-large.jpg" />
+
+              <!-- <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1" />
+              <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2" />
+              <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3" /> -->
             </div>
           </div>
-        </div>
+        </article>
       </section>
       
       <section class="section-features">
-        <div class="row">
-          <div class="col-1-of-4">
+        <article class="row">
+          <section class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-world"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
@@ -88,9 +104,9 @@
                 Tenetur aliquid odio laboriosam porro provident adipisci sequi sint Et!
               </p>
             </div>
-          </div>
+          </section>
 
-          <div class="col-1-of-4">
+          <section class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-compass"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">Meet nature</h3>
@@ -99,9 +115,9 @@
                 rem rerum similique, officiis ducimus!
               </p>
             </div>
-          </div>
+          </section>
 
-          <div class="col-1-of-4">
+          <section class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-map"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
@@ -110,9 +126,9 @@
                 blanditiis animi quis iusto, et nihil!
               </p>
             </div>
-          </div>
+          </section>
 
-          <div class="col-1-of-4">
+          <section class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-heart"></i>
               <h3 class="heading-tertiary u-margin-bottom-small">live a healthier life</h3>
@@ -121,14 +137,14 @@
                 dolor fuga
               </p>
             </div>
-          </div>
-        </div>
+          </section>
+        </article>
       </section>
 
       <section class="section-tours" id="section-tours">
-        <div class="u-center-text u-margin-bottom-big">
+        <header class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
-        </div>
+        </header>
         <div class="row">
           <div class="col-1-of-3">
             <div class="card">
@@ -330,7 +346,12 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+        <picture class="footer__logo">
+          <source srcset="img/logo-green-small-1x.png 1x, logo-green-small-2x.png 2x" media="(max-width: 37.5em)" />
+          <img srcset="img/logo-green-1x.png 1x, logo-green-2x.png 2x" 
+               alt="Full logo" 
+               src="logo-green-small-2x.png" />
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">
